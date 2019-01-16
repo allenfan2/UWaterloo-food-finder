@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Foodie Lootie &copy</title>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>    
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<script src="output.js"></script></head>
+	<body>
+		<div>
+		<div id= header>
+			<center><h1>Foodie Lootie</h1></center>
+		</div>
+			<div id = search >
+			<form>
+				<LABEL class=textlabel1>Food keywords: </LABEL><br>
+				<input id=t1 type = "text" placeholder="beef, chicken, pork .."> <br>
+				<button id=sbut title="Click to search Deliciousness" type="button" onclick="init();">
+				<label class=textlabel>Search</label></button>
+				<input id=year title="Enter the year (2000 ~ 2017)" class=text2 type = "text" placeholder="Year"> 
+				<input id=week title="Enter the week number (1 ~ 64)" class=text2 type = "text" placeholder="Week"> 
+  				<div id="cbox"> 
+  					<LABEL id=tag>Specific Time(Optional): </LABEL><br>
+  					<input id=c1 type="checkbox" name="avail" value="bfast"><label class=rlable>Breakfast</label>
+					<input id=c2 type="checkbox" name="avail" value="lunch"><label class=rlable>Lunch</label> 
+					<input id=c3 type="checkbox" name="avail" value="dinner"><label class=rlable>Dinner</label><br> 
+  				</div>	
+  				<div id="sbox">
+  					<LABEL class=rlable>Diet specifications: </LABEL>
+					<select id ="box" name="box">
+					 <option value="none"><LABEL class=rlable>None</LABEL></option>
+					 <option value="halal"><LABEL class=rlable>Halal</LABEL></option>
+					 <option value="veg"><LABEL class=rlable>Vegetarian</LABEL></option>
+					</select>
+  				</div>	
+  				</form>
+  				</div>
+			</div>
+		<div><p id="total"></p></div>
+		<div id = result >
+		</div>
+		</div>
+	</body>
+</html>
